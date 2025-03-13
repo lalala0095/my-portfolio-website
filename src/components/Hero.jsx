@@ -15,13 +15,22 @@ const Hero = () => {
           </p>
   
           {/* Download CV Button - Positioned at the bottom */}
-          <a
-            href="/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
-            download="Lemuel-Torrefiel-CV.pdf"
-            className="mt-6 px-6 py-3 text-white font-semibold bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
-          >
-            Download CV
-          </a>
+          <div className="my-11">
+            <a
+              href="/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
+              download="Lemuel-Torrefiel-CV.pdf"
+              className="mx-11 mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
+            >
+              Download CV
+            </a>
+            <a
+              href="/Lemuel-Torrefiel-Portfolio.pdf" // Ensure the PDF is in the "public" folder
+              download="Lemuel-Torrefiel-Portfolio.pdf"
+              className="mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
+            >
+              Download Portfolio
+            </a>
+          </div>
         </div>
   
         {/* Profile Image */}

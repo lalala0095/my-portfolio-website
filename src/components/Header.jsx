@@ -32,7 +32,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md p-4">
-          <a href="#work" className="block nav-link">
+          <a href="#work" className="block nav-link hover:bg-red-700">
             Work
           </a>
           <a href="#blog" className="block nav-link">
