@@ -36,7 +36,7 @@ const Hero = () => {
         {/* Profile Image */}
         <div className="w-48 md:w-64 lg:w-80 h-48 md:h-64 lg:h-80 overflow-hidden rounded-full border-4 border-gray-200 shadow-lg">
           <img
-            src="/profile.jpg" // Replace with your actual image path
+            src="/my-portfolio-website/profile.jpg" // Replace with your actual image path
             alt="Lemuel Torrefiel"
             className="w-full h-full object-cover object-center"
           />
