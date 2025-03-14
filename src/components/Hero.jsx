@@ -17,14 +17,14 @@ const Hero = () => {
         {/* Download CV Button - Positioned at the bottom */}
         <div className="my-11">
           <a
-            href="/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
+            href="/my-portfolio-website/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
             download="Lemuel-Torrefiel-CV.pdf"
             className="mx-11 mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
           >
             Download CV
           </a>
           <a
-            href="/Lemuel-Torrefiel-Portfolio.pdf" // Ensure the PDF is in the "public" folder
+            href="/my-portfolio-website/Lemuel-Torrefiel-Portfolio.pdf" // Ensure the PDF is in the "public" folder
             download="Lemuel-Torrefiel-Portfolio.pdf"
             className="mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
           >
