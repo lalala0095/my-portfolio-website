@@ -70,7 +70,7 @@ const TechStackShowcase = () => {
   };
 
   return (
-    <div ref={sectionRef} className="py-16 bg-gradient-to-b from-white to-gray-50">
+    <div id="tech-stacks" ref={sectionRef} className="py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h2 className="text-4xl font-bold text-center mb-2">My Tech Stack</h2>

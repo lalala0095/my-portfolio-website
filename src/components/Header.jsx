@@ -9,11 +9,14 @@ const Header = () => {
         <h1 className="text-2xl font-bold text-gray-800"> </h1>
 
         <nav className="hidden md:flex space-x-6">
-          <a href="#work" className="nav-link">
-            Work
+          <a href="#home" className="nav-link">
+            Home
           </a>
-          <a href="#blog" className="nav-link">
-            Blog
+          <a href="#tech-stacks" className="nav-link">
+            Tech Stacks
+          </a>
+          <a href="#projects" className="nav-link">
+            Projects
           </a>
           <a href="#contact" className="nav-link">
             Contact
@@ -32,11 +35,14 @@ const Header = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md p-4">
-          <a href="#work" className="block nav-link hover:bg-red-700">
-            Work
+          <a href="#home" className="block nav-link hover:bg-red-700">
+            Home
           </a>
-          <a href="#blog" className="block nav-link">
-            Blog
+          <a href="#tech-stacks" className="block nav-link">
+            Tech Stacks
+          </a>
+          <a href="#projects" className="nav-link">
+            Projects
           </a>
           <a href="#contact" className="block nav-link">
             Contact

@@ -25,3 +25,4 @@ dist-ssr
 
 build
 src/manual_index.html
+.env
