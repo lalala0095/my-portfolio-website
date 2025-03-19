@@ -1,0 +1,39 @@
+[
+    {
+      "id": "sales-forecasting-real",
+      "title": "Optimizing Sales Forecasting for a Retail Company",
+      "description": "Helped a mid-sized retail business improve inventory forecasting, reducing stockouts by 30%.",
+      "challenge": "The client struggled with inaccurate demand forecasting, leading to overstocking and stockouts.",
+      "approach": "Used Python and Power BI to build a predictive analytics model, improving demand forecasts.",
+      "impact": {
+        "forecast_accuracy": "25% increase",
+        "stockout_reduction": "30% fewer stockouts",
+        "sales_growth": "15% increase in sales"
+      },
+      "image": "/images/BLACK AND BLUE SALES.PNG"
+    },
+    {
+      "id": "etl-automation-real",
+      "title": "Automating ETL Pipelines for a Logistics Firm",
+      "description": "Reduced data processing time by 80% by automating ETL workflows using Python and AWS Lambda.",
+      "challenge": "Manual data handling led to delays and inaccuracies in reporting.",
+      "approach": "Developed a serverless ETL pipeline using AWS Lambda, S3, and MongoDB.",
+      "impact": {
+        "processing_time_reduction": "80% faster",
+        "error_reduction": "99% fewer data errors"
+      },
+      "image": "/images/airflow.png"
+    },
+    {
+        "id": "ongoing-development",
+        "title": "This section is in development mode",
+        "description": "This section is in development mode",
+        "challenge": "This section is in development mode",
+        "approach": "This section is in development mode",
+        "impact": {
+            "processing_time_reduction": "This section is in development mode",
+            "error_reduction": "This section is in development mode"
+        }
+    }
+]
+  
