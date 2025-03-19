@@ -13,7 +13,7 @@ const AdvPOSPage = () => {
       processing_time_reduction: "80% faster",
       error_reduction: "99% fewer data errors",
     },
-    image: "/images/airflow.png",
+    image: "/my-portfolio-website/images/airflow.png",
   };
 
   return (

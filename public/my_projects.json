@@ -3,35 +3,35 @@
         "title": "React JS - AdvPOS",
         "description": "The objective of this app is to help users manage their expenses, bills and cash flows, to easily analyze their data based on the comparison of both. I envision this project to benefit community, by creating planner reports for their finance management.",
         "type": "Frontend Web Development",
-        "thumbnail": "/images/LANDINGPAGE.png",
+        "thumbnail": "/my-portfolio-website/images/LANDINGPAGE.png",
         "page_name": "AdvPOS"
     },
     {
       "title": "FastAPI - API Backend for AdvPOS",
       "description": "This an API service and serves as a backend for my personal project, a React App website AdvPOS. This includes user Authentication and Mongodb database CRUD operations.",
       "type": "Data Analytics",
-      "thumbnail": "/images/FastAPI Docs 1.png",
+      "thumbnail": "/my-portfolio-website/images/FastAPI Docs 1.png",
       "page_name": "AdvPOS"
     },
     {
         "title": "Power BI - Real Estate Dashboard of London Sold Properties",
         "description": "This project has helpful insights of sold properties in London to assist Market Research or Analysis. I also want to emphasize here my ability to incorporate and show GeoJSON data or Geographic data in Power BI.",
         "type": "Data Analytics",
-        "thumbnail": "/images/real_estate_dashboard_snapshot1.png",
+        "thumbnail": "/my-portfolio-website/images/real_estate_dashboard_snapshot1.png",
         "page_name": "AdvPOS"
     },
     {
       "title": "Microsoft Excel - CRM of L&M's Products (My Computer Parts Small Business)",
       "description": "The objective of this App is to be able to assist my personal business here in the Philippines, in Inventory management, Revenue projection and Cost analysis.",
       "type": "Desktop App Development",
-      "thumbnail": "/images/DASHBOARD IN EXCEL.jpg",
+      "thumbnail": "/my-portfolio-website/images/DASHBOARD IN EXCEL.jpg",
       "page_name": "AdvPOS"
     },
     {
         "title": "Microsoft Excel - Dashboard of L&M's Products ",
         "description": "This helps me in identifying potential improvements to my inventory management that can also contribute to addition and reduction of marketing spend that most businesses can benefit from.",
         "type": "Data Analytics",
-        "thumbnail": "/images/Excel Dashboard.PNG",
+        "thumbnail": "/my-portfolio-website/images/Excel Dashboard.PNG",
         "page_name": "AdvPOS"
       }  
   ]

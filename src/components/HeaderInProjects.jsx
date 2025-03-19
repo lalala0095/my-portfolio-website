@@ -7,7 +7,7 @@ const HeaderInProjects = () => {
 
   const handleScroll = (e, sectionId) => {
     e.preventDefault();
-    navigate("/");
+    navigate("/my-portfolio-website/");
     setTimeout(() => {
       const section = document.getElementById(sectionId);
       if (section) {
@@ -22,19 +22,19 @@ const HeaderInProjects = () => {
         <h1 className="text-2xl font-bold text-gray-800"> </h1>
 
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="nav-link">
+          <Link to="/my-portfolio-website/" className="nav-link">
             Home
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "tech-stacks")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "tech-stacks")} className="nav-link">
             Tech Stacks
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "projects")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "projects")} className="nav-link">
             Projects
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
             Video Introduction
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
             Contact
           </Link>
         </nav>
@@ -51,19 +51,19 @@ const HeaderInProjects = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md p-4">
-          <Link to="/" className="block nav-link hover:bg-red-700">
+          <Link to="/my-portfolio-website/" className="block nav-link hover:bg-red-700">
             Home
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "tech-stacks")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "tech-stacks")} className="nav-link">
             Tech Stacks
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "projects")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "projects")} className="nav-link">
             Projects
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
             Video Introduction
           </Link>
-          <Link to="/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
             Contact
           </Link>
         </div>

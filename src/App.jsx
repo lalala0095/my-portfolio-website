@@ -18,7 +18,7 @@ function Layout() {
     <>
       {isProjectDetail ? <HeaderInProjects /> : <Header />}
       <Routes>
-        <Route path="/" element={
+        <Route path="/my-portfolio-website" element={
           <>
             <Hero />
             <TechStackShowcase />
