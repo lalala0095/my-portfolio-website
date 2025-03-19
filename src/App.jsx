@@ -7,8 +7,7 @@ import TechStackShowcase from "./components/TechStacks";
 import Projects from "./components/Projects";
 import ContactSection from "./components/Contact";
 import YouTubeSection from "./components/YoutubeVideoSection";
-import ProjectDetail from "./components/ProjectsDetail";
-import ProjectsPage from "./pages/ProjectsPage";
+import AdvPOSPage from "./pages/projects/AdvPOS";
 
 function Layout() {
   const location = useLocation();
@@ -28,8 +27,7 @@ function Layout() {
             <ContactSection />
           </>
         } />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/projects/:projectId" element={<ProjectDetail />} />
+        <Route path="/projects/AdvPOS" element={<AdvPOSPage />} />
       </Routes>
       <Footer />
     </>
