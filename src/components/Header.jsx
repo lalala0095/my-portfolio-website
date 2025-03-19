@@ -18,6 +18,9 @@ const Header = () => {
           <a href="#projects" className="nav-link">
             Projects
           </a>
+          <a href="#youtube-section" className="nav-link">
+            Video Introduction
+          </a>
           <a href="#contact" className="nav-link">
             Contact
           </a>

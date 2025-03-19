@@ -17,14 +17,14 @@ const Hero = () => {
         {/* Download CV Button - Positioned at the bottom */}
         <div className="my-11">
           <a
-            href="/my-portfolio-website/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
+            href="/Lemuel-Torrefiel-CV.pdf" // Ensure the PDF is in the "public" folder
             download="Lemuel-Torrefiel-CV.pdf"
             className="mx-11 mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
           >
             Download CV
           </a>
           <a
-            href="/my-portfolio-website/Lemuel-Torrefiel-Portfolio.pdf" // Ensure the PDF is in the "public" folder
+            href="/Lemuel-Torrefiel-Portfolio.pdf" // Ensure the PDF is in the "public" folder
             download="Lemuel-Torrefiel-Portfolio.pdf"
             className="mt-6 px-6 py-3 text-black font-semibold bg-white rounded-lg shadow-md hover:bg-gray-400 transition duration-300"
           >
@@ -36,7 +36,7 @@ const Hero = () => {
       {/* Profile Image */}
       <div className="w-48 md:w-64 lg:w-80 h-48 md:h-64 lg:h-80 overflow-hidden rounded-full border-4 border-gray-200 shadow-lg">
         <img
-          src="/my-portfolio-website/profile.jpg" // Replace with your actual image path
+          src="/profile.png" // Replace with your actual image path
           alt="Lemuel Torrefiel"
           className="w-full h-full object-cover object-center"
         />
