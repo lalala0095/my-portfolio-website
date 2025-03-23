@@ -8,26 +8,29 @@ import Projects from "./components/Projects";
 import ContactSection from "./components/Contact";
 import YouTubeSection from "./components/YoutubeVideoSection";
 import AdvPOSPage from "./pages/projects/AdvPOS";
+import { useState } from "react";
 
 function Layout() {
   const location = useLocation();
-  
-  const isProjectDetail = /^\/projects\/[^/]+$/.test(location.pathname);
+  const isProjectDetail = location.pathname.includes("/projects/");
+  const [isOpen, setIsOpen] = useState(false);
+
+  // const isProjectDetail = /^\/projects\/[^/]+$/.test(location.pathname);
 
   return (
     <>
-      {isProjectDetail ? <HeaderInProjects /> : <Header />}
+      {isProjectDetail ? <HeaderInProjects /> : <Header isOpen={isOpen} setIsOpen={setIsOpen} />}
       <Routes>
         <Route path="/my-portfolio-website" element={
           <>
-            <Hero />
+            <Hero isOpen={isOpen} setIsOpen={setIsOpen}/>
             <TechStackShowcase />
             <Projects />
             <YouTubeSection />
             <ContactSection />
           </>
         } />
-        <Route path="/projects/AdvPOS" element={<AdvPOSPage />} />
+        <Route path="/my-portfolio-website/projects/AdvPOS" element={<AdvPOSPage />} />
       </Routes>
       <Footer />
     </>
