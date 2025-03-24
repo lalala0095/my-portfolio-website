@@ -34,6 +34,9 @@ const HeaderInProjects = () => {
           <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
             Video Introduction
           </Link>
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "certificates")} className="nav-link">
+            Certificates
+          </Link>
           <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
             Contact
           </Link>
@@ -62,6 +65,9 @@ const HeaderInProjects = () => {
           </Link>
           <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "youtube-section")} className="nav-link">
             Video Introduction
+          </Link>
+          <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "certificates")} className="nav-link">
+            Certificates
           </Link>
           <Link to="/my-portfolio-website/" onClick={(e) => handleScroll(e, "contact")} className="nav-link">
             Contact

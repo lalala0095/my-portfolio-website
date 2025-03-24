@@ -14,6 +14,7 @@ import PBIRealEstateLondon from "./pages/projects/PBIRealEstateLondon";
 import Ecommerce from "./pages/projects/Ecommerce";
 import MSExcelCRM from "./pages/projects/MSExcelCRM";
 import AIGemini from "./pages/projects/AIGemini";
+import Certificates from "./components/Certificates";
 
 function Layout() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function Layout() {
             <TechStackShowcase />
             <Projects />
             <YouTubeSection />
+            <Certificates />
             <ContactSection />
           </>
         } />

@@ -17,6 +17,9 @@ const Header = ({ isOpen, setIsOpen }) => {
           <a href="#youtube-section" className="nav-link">
             Video Introduction
           </a>
+          <a href="#certificates" className="nav-link">
+            Certificates
+          </a>
           <a href="#contact" className="nav-link">
             Contact
           </a>
@@ -42,6 +45,12 @@ const Header = ({ isOpen, setIsOpen }) => {
           </a>
           <a href="#projects" className="nav-link">
             Projects
+          </a>
+          <a href="#youtube-section" className="nav-link">
+            Video Introduction
+          </a>
+          <a href="#certificates" className="nav-link">
+            Certificates
           </a>
           <a href="#contact" className="block nav-link">
             Contact
