@@ -9,6 +9,8 @@ import ContactSection from "./components/Contact";
 import YouTubeSection from "./components/YoutubeVideoSection";
 import AdvPOSPage from "./pages/projects/AdvPOS";
 import { useState } from "react";
+import AdvPOSBackend from "./pages/projects/AdvPOSBackend";
+import PBIRealEstateLondon from "./pages/projects/PBIRealEstateLondon";
 
 function Layout() {
   const location = useLocation();
@@ -31,6 +33,8 @@ function Layout() {
           </>
         } />
         <Route path="/my-portfolio-website/projects/AdvPOS" element={<AdvPOSPage />} />
+        <Route path="/my-portfolio-website/projects/AdvPOSBackend" element={<AdvPOSBackend />} />
+        <Route path="/my-portfolio-website/projects/PBIRealEstateLondon" element={<PBIRealEstateLondon />} />
       </Routes>
       <Footer />
     </>
