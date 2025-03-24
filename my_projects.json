@@ -14,6 +14,13 @@
       "page_name": "AdvPOSBackend"
     },
     {
+      "title": "Power BI - Ecommerce Dashboard for Industrial Pipes Company",
+      "description": "The objective of this Powre BI Report is to support the decision making process of my previous client focusing on Sales analytics of their Website.",
+      "type": "Data Analytics",
+      "thumbnail": "/my-portfolio-website/images/ecommerce/ECOMMERCE.png",
+      "page_name": "Ecommerce"
+    },
+    {
         "title": "Power BI - Real Estate Dashboard of London Sold Properties",
         "description": "This project has helpful insights of sold properties in London to assist Market Research or Analysis. I also want to emphasize here my ability to incorporate and show GeoJSON data or Geographic data in Power BI.",
         "type": "Data Analytics",
@@ -25,21 +32,21 @@
       "description": "The objective of this App is to be able to assist my personal business here in the Philippines, in Inventory management, Revenue projection and Cost analysis.",
       "type": "Desktop App Development",
       "thumbnail": "/my-portfolio-website/images/DASHBOARD IN EXCEL.jpg",
-      "page_name": "AdvPOS"
+      "page_name": "MSExcelCRM"
     },
     {
         "title": "Microsoft Excel - Dashboard of L&M's Products ",
         "description": "This helps me in identifying potential improvements to my inventory management that can also contribute to addition and reduction of marketing spend that most businesses can benefit from.",
         "type": "Data Analytics",
         "thumbnail": "/my-portfolio-website/images/Excel Dashboard.PNG",
-        "page_name": "AdvPOS"
+        "page_name": "MSExcelCRM"
       },
-      {
-        "title": "React JS - Google Gemini Chat Bot Clone",
-        "description": "This is a clone of Google Gemini Chat Bot using the Google Gemini API.",
-        "type": "Frontend Web Development",
-        "thumbnail": "/my-portfolio-website/images/GEMINI CHAT BOT CLONE.png",
-        "page_name": "AdvPOS"
-      }
-    ]
+    {
+      "title": "React JS + Express JS - Google Gemini Chat Bot Clone",
+      "description": "This is a clone of Google Gemini Chat Bot using the Google Gemini API.",
+      "type": "Frontend Web Development",
+      "thumbnail": "/my-portfolio-website/images/GEMINI CHAT BOT CLONE.png",
+      "page_name": "AIGemini"
+    }
+]
   
