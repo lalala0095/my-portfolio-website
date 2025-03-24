@@ -11,6 +11,9 @@ import AdvPOSPage from "./pages/projects/AdvPOS";
 import { useState } from "react";
 import AdvPOSBackend from "./pages/projects/AdvPOSBackend";
 import PBIRealEstateLondon from "./pages/projects/PBIRealEstateLondon";
+import Ecommerce from "./pages/projects/Ecommerce";
+import MSExcelCRM from "./pages/projects/MSExcelCRM";
+import AIGemini from "./pages/projects/AIGemini";
 
 function Layout() {
   const location = useLocation();
@@ -35,6 +38,9 @@ function Layout() {
         <Route path="/my-portfolio-website/projects/AdvPOS" element={<AdvPOSPage />} />
         <Route path="/my-portfolio-website/projects/AdvPOSBackend" element={<AdvPOSBackend />} />
         <Route path="/my-portfolio-website/projects/PBIRealEstateLondon" element={<PBIRealEstateLondon />} />
+        <Route path="/my-portfolio-website/projects/Ecommerce" element={<Ecommerce />} />
+        <Route path="/my-portfolio-website/projects/MSExcelCRM" element={<MSExcelCRM />} />
+        <Route path="/my-portfolio-website/projects/AIGemini" element={<AIGemini />} />
       </Routes>
       <Footer />
     </>
