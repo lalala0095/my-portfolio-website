@@ -6,6 +6,7 @@ const AdvPOSPage = () => {
   const project = {
     id: "AdvPOS",
     title: "AdvPOS App",
+    deployed_link: "https://advpos.vercel.app/",
     description:
       "The objective of this app is to help users manage their finances.",
     challenge:
@@ -79,6 +80,9 @@ const AdvPOSPage = () => {
         />
         <h3 className="text-lg font-semibold text-gray-900 mt-4">Overview</h3>
         <p className="text-gray-700">{project.description}</p>
+
+        <h3 className="text-lg font-semibold text-gray-900 mt-4">Deployed Link</h3>
+        <p className="text-gray-700">{project.deployed_link}</p>
 
         <h3 className="text-lg font-semibold text-gray-900 mt-4">Challenge</h3>
         <p className="text-gray-700">{project.challenge}</p>

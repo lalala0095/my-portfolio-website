@@ -23,6 +23,8 @@ const ProjectDetail = () => {
     <div className="container mx-auto my-5 px-6 py-10">
       <h2 className="text-4xl font-bold">{project.title}</h2>
       <p className="text-gray-600">{project.description}</p>
+      <h3 className="text-2xl font-bold mt-6">Deployed URL</h3>
+      <p>{project.deployed_link}</p>
       <h3 className="text-2xl font-bold mt-6">The Challenge</h3>
       <p>{project.challenge}</p>
       <h3 className="text-2xl font-bold mt-6">My Approach</h3>

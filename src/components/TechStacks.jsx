@@ -4,7 +4,7 @@ import { FaStar, FaSearchengin, FaRegStar } from "react-icons/fa";
 import {
   FaAws, FaReact, FaChartBar, FaRProject, FaGoogle
 } from "react-icons/fa";
-import GoogleGeminiIcon from "./GoogleGeminiIcon";
+import GoogleGeminiIcon from "./icons/GoogleGeminiIcon";
 import { TbSearch } from "react-icons/tb";
 import {
   SiMongodb, SiMysql, SiFlask, SiFastapi, SiPostgresql, SiTailwindcss,
