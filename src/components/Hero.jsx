@@ -12,11 +12,12 @@ const Hero = ({ isOpen }) => { // Destructure isOpen from props
           <span className="text-gray-900"> Data Analyst</span> and  
           <span className="text-gray-900"> Data Engineer</span>  
           <br /> who aspires to dive into  
-          <span className="text-gray-900"> Web Development.</span>
+          <span className="text-gray-900"> Web Development</span>
+          <span className="text-gray-900"> with AI integration.</span>
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Welcome to my Portfolio website.
-          My vision is to utilize my past experiences with Data Analytics and Data Engineering to become an effective Web Developer. 
+          My vision is to utilize my past experiences with Data Analytics and Data Engineering to become an effective Web Developer with AI tools integrations. 
         </p>
 
         {/* Download CV Button - Positioned at the bottom */}

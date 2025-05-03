@@ -1,5 +1,15 @@
 [
     {
+      "id": "ai-api",
+      "title": "🧠 AI & API Integrations",
+      "technologies": [
+        { "name": "OpenAI GPT", "icon": "SiOpenai", "color": "text-gray-800", "rating": 5 },
+        { "name": "Google Gemini", "icon": "GoogleGeminiIcon", "color": "text-red-600", "rating": 4 },
+        { "name": "Perplexity AI", "icon": "TbSearch", "color": "text-blue-400", "rating": 3.5 },
+        { "name": "SERP APIs", "icon": "FaSearchengin", "color": "text-orange-500", "rating": 3.5 }
+      ]
+    }, 
+    {
       "id": "web",
       "title": "🌐 Frontend/Backend Web Development",
       "technologies": [

@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import techStacks from "../techStacks.json";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { FaStar, FaSearchengin, FaRegStar } from "react-icons/fa";
 import {
   FaAws, FaReact, FaChartBar, FaRProject, FaGoogle
 } from "react-icons/fa";
+import GoogleGeminiIcon from "./GoogleGeminiIcon";
+import { TbSearch } from "react-icons/tb";
 import {
   SiMongodb, SiMysql, SiFlask, SiFastapi, SiPostgresql, SiTailwindcss,
-  SiGooglesheets, SiApacheairflow, SiPython, SiGithubpages, SiGooglecloud
+  SiGooglesheets, SiApacheairflow, SiPython, SiGithubpages, SiGooglecloud,
+  SiOpenai
 } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 import { PiFileSql, PiMicrosoftExcelLogoFill } from "react-icons/pi";
@@ -15,7 +18,8 @@ const icons = {
   FaAws, FaReact, FaChartBar, FaRProject, FaGoogle,
   SiMongodb, SiMysql, SiFlask, SiFastapi, SiPostgresql, SiTailwindcss,
   SiGooglesheets, SiApacheairflow, SiPython, SiGithubpages,
-  VscAzure, PiFileSql, PiMicrosoftExcelLogoFill, SiGooglecloud
+  VscAzure, PiFileSql, PiMicrosoftExcelLogoFill, SiGooglecloud,
+  SiOpenai, GoogleGeminiIcon, TbSearch, FaSearchengin
 };
 
 const TechStackShowcase = () => {
