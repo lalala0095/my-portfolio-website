@@ -1,15 +1,22 @@
 [
     {
-        "title": "React JS - AdvPOS",
-        "description": "The objective of this app is to help users manage their expenses, bills and cash flows, to easily analyze their data based on the comparison of both. I envision this project to benefit community, by creating planner reports for their finance management.",
-        "type": "Frontend Web Development",
-        "thumbnail": "/my-portfolio-website/images/LANDINGPAGE.png",
-        "page_name": "AdvPOS"
+      "title": "React JS - AdvPOS",
+      "description": "The objective of this app is to help users manage their expenses, bills and cash flows, to easily analyze their data based on the comparison of both. I envision this project to benefit community, by creating planner reports for their finance management.",
+      "type": "Frontend Web Development",
+      "thumbnail": "/my-portfolio-website/images/LANDINGPAGE.png",
+      "page_name": "AdvPOS"
+    },
+    {
+      "title": "FastAPI - Smart Task with Queue System Using Celery, OpenAI and Google Gemini API",
+      "description": "The objective of this backend server is to assist the ongoing project of my client of a confidential project.",
+      "type": "Backend Web Development",
+      "thumbnail": "/my-portfolio-website/images/smart-task/smart-task-fastapi.png",
+      "page_name": "SmartTask"
     },
     {
       "title": "FastAPI - API Backend for AdvPOS",
       "description": "This an API service and serves as a backend for my personal project, a React App website AdvPOS. This includes user Authentication and Mongodb database CRUD operations.",
-      "type": "Data Analytics",
+      "type": "Backend Web Development",
       "thumbnail": "/my-portfolio-website/images/FastAPI Docs 1.png",
       "page_name": "AdvPOSBackend"
     },
