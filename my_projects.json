@@ -1,5 +1,12 @@
 [
     {
+      "title": "React JS + FastAPI - Travel Destination Finder",
+      "description": "The objective of this web app is to assist users on their next potential destination base on their user given preferences.",
+      "type": "Full Stack Web Development with AI Backend",
+      "thumbnail": "/my-portfolio-website/images/travel/results2.png",
+      "page_name": "TravelDestinationFinder"
+    },
+    {
       "title": "React JS - AdvPOS",
       "description": "The objective of this app is to help users manage their expenses, bills and cash flows, to easily analyze their data based on the comparison of both. I envision this project to benefit community, by creating planner reports for their finance management.",
       "type": "Frontend Web Development",
