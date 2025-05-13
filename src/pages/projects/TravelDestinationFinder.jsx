@@ -1,25 +1,32 @@
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-const AIGemini = () => {
+const TravelDestinationFinderPage = () => {
   // Static project object with detailed information
   const project = {
-    id: "AIGemini",
-    title: "React JS + Express JS - Google Gemini Chat Bot Clone",
+    id: "TravelDestinationFinder",
+    title: "React - Travel Destination Finder base on User Prompts - Utilizing Google Gemini API",
+    deployed_link: "https://travel-destination-frontend-two.vercel.app/",
     description:
-      "This is a clone of Google Gemini Chat Bot using the Google Gemini API.",
+      "The objective of this web app is to assist users on their next potential destination base on their user given preferences.",
     challenge:
-      "This is an initiative for me to develop my practical skills and learnings in AI Engineering.",
+      "The user might struggle to find good relevant suggestions out of typical search engines.",
     approach:
-      "Using React JS and Express JS, develop a clone of Google Gemini to have an understanding of AI principles and learn more of the aspects of AI Engineering with the aid of Googel Gemini API.",
+      "Develop a full stack web app dedicated for generating travel destinations base on user's query. This query will be proccessed under the hood to get the relevant places, by the power of Google Gemini API as an assistant.",
     impact: {
-      LearnFromExperience: "This helps me to learn more in the field of AI Engineering, by practical usage and at the same time, improve my skills in Express JS which is new tool also for me since I've practiced more using Python.",
-      ChatBotProgramming: "Since AI Agents are becoming popular, it is a good initiative to perform such project that will aid my learning with different AI models available in the world wide web.",
-      SetAdditionalGoals: "This creates me a list of technologies to continue learn and contribute to the Data Community, and also support my clients with improved skills and tools.",
+      RealTimeSearch: "The search results are in real time - using Google's Custom Search API. This includes highly relevant search results based on the user's preference.",
+      ImagePreviews: "The frontend displays images of the places. This helps the users on selecting their prefered destination by visual criteria.",
+      MaximizeAITools: "This server is designed to maximize the use of AI tools like Google Gemini API and Google Custom Search API.",
+      UserExperience: "This web app aims to be a highly performing while keeping the latency low. The UI is very simple and serves it's purpose.",
     },
-    image: "/my-portfolio-website/images/GEMINI CHAT BOT CLONE.png",
+    image: "/my-portfolio-website/images/travel/results2.png",
     gallery: [
-      "/my-portfolio-website/images/GEMINI CHAT BOT CLONE.png",
+      "/my-portfolio-website/images/travel/home.png",
+      "/my-portfolio-website/images/travel/loading.png",
+      "/my-portfolio-website/images/travel/results1.png",
+      "/my-portfolio-website/images/travel/results2.png",
+      "/my-portfolio-website/images/travel/results3.png",
+      "/my-portfolio-website/images/travel/results4.png"
     ],
   };
 
@@ -81,6 +88,9 @@ const AIGemini = () => {
         <h3 className="text-lg font-semibold text-gray-900 mt-4">Overview</h3>
         <p className="text-gray-700">{project.description}</p>
 
+        <h3 className="text-lg font-semibold text-gray-900 mt-4">Deployed Link</h3>
+        <p className="text-gray-700">{project.deployed_link}</p>
+
         <h3 className="text-lg font-semibold text-gray-900 mt-4">Challenge</h3>
         <p className="text-gray-700">{project.challenge}</p>
 
@@ -89,9 +99,10 @@ const AIGemini = () => {
 
         <h3 className="text-lg font-semibold text-gray-900 mt-4">Impact</h3>
         <ul className="list-disc list-inside text-gray-700">
-          <li><strong>Learn By Experience:</strong> {project.impact.LearnFromExperience}</li>
-          <li><strong>Learn Chat Bot Programming:</strong> {project.impact.ChatBotProgramming}</li>
-          <li><strong>Set More Learning Goals:</strong> {project.impact.SetAdditionalGoals}</li>
+          <li><strong>Real Time Search:</strong> {project.impact.RealTimeSearch}</li>
+          <li><strong>Image Previews:</strong> {project.impact.ImagePreviews}</li>
+          <li><strong>Modern AI Tools:</strong> {project.impact.MaximizeAITools}</li>
+          <li><strong>Aims to Provide Great User Experience:</strong> {project.impact.UserExperience}</li>
         </ul>
 
         {/* Gallery Section */}
@@ -141,4 +152,4 @@ const AIGemini = () => {
   );
 };
 
-export default AIGemini;
+export default TravelDestinationFinderPage;

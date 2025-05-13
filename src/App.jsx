@@ -16,6 +16,7 @@ import Ecommerce from "./pages/projects/Ecommerce";
 import MSExcelCRM from "./pages/projects/MSExcelCRM";
 import AIGemini from "./pages/projects/AIGemini";
 import Certificates from "./components/Certificates";
+import TravelDestinationFinderPage from "./pages/projects/TravelDestinationFinder";
 
 function Layout() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function Layout() {
             <ContactSection />
           </>
         } />
+        <Route path="/my-portfolio-website/projects/TravelDestinationFinder" element={<TravelDestinationFinderPage />} />
         <Route path="/my-portfolio-website/projects/AdvPOS" element={<AdvPOSPage />} />
         <Route path="/my-portfolio-website/projects/SmartTask" element={<SmartTaskPage />} />
         <Route path="/my-portfolio-website/projects/AdvPOSBackend" element={<AdvPOSBackend />} />

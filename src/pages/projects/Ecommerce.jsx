@@ -63,6 +63,23 @@ const Ecommerce = () => {
     setSelectedImage(project.gallery[newIndex]);
   };  
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (!selectedImage) return;
+  
+      if (event.key === 'ArrowRight') {
+        nextImage();
+      } else if (event.key === 'ArrowLeft') {
+        prevImage();
+      } else if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+  
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage, nextImage, prevImage]);
+
   return (
     <div className="container mx-auto px-6 py-10 mt-4">
       <h2 className="text-4xl font-bold text-center mb-6">{project.title}</h2>
