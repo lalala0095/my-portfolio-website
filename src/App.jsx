@@ -17,6 +17,7 @@ import MSExcelCRM from "./pages/projects/MSExcelCRM";
 import AIGemini from "./pages/projects/AIGemini";
 import Certificates from "./components/Certificates";
 import TravelDestinationFinderPage from "./pages/projects/TravelDestinationFinder";
+import CSChatBotPage from "./pages/projects/CSChatBot";
 
 function Layout() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function Layout() {
           </>
         } />
         <Route path="/my-portfolio-website/projects/TravelDestinationFinder" element={<TravelDestinationFinderPage />} />
+        <Route path="/my-portfolio-website/projects/CSChatBot" element={<CSChatBotPage />} />
         <Route path="/my-portfolio-website/projects/AdvPOS" element={<AdvPOSPage />} />
         <Route path="/my-portfolio-website/projects/SmartTask" element={<SmartTaskPage />} />
         <Route path="/my-portfolio-website/projects/AdvPOSBackend" element={<AdvPOSBackend />} />
