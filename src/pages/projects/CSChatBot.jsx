@@ -2,6 +2,21 @@ import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const CSChatBotPage = () => {
+  function YouTubeEmbed() {
+    return (
+      <div className="w-full max-w-4xl mx-auto aspect-video mt-4">
+        <iframe
+          className="w-full h-full rounded-md"
+          src="https://www.youtube.com/embed/34i7gQlUldE"
+          title="YouTube video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    );
+  }
+          
   // Static project object with detailed information
   const project = {
     id: "CSChatBot",
@@ -106,6 +121,9 @@ const CSChatBotPage = () => {
 
         {/* Gallery Section */}
         <h3 className="text-lg font-semibold text-gray-900 mt-6">Gallery</h3>
+        <div>
+          <YouTubeEmbed />
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
           {project.gallery.map((image, index) => (
             <img
