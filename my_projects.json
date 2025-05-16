@@ -7,6 +7,13 @@
       "page_name": "TravelDestinationFinder"
     },
     {
+      "title": "React Typescript + FastAPI - Live AI Customer Support Chat Bot",
+      "description": "The objective of this web app is to assist users of an E-commerce website about his/her orders and complaints.",
+      "type": "Full Stack Web Development with AI Backend",
+      "thumbnail": "/my-portfolio-website/images/cs-chatbot/conversation1.png",
+      "page_name": "CSChatBot"
+    },
+    {
       "title": "React JS - AdvPOS",
       "description": "The objective of this app is to help users manage their expenses, bills and cash flows, to easily analyze their data based on the comparison of both. I envision this project to benefit community, by creating planner reports for their finance management.",
       "type": "Frontend Web Development",
