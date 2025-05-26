@@ -45,11 +45,21 @@ const Projects = () => {
                   <h3 className="text-xl font-bold">{project.title}</h3>
                 </Link>
               )}
-              <img
-                src={project.thumbnail || project.image}
-                alt={project.title}
-                className="w-full h-40 object-cover rounded-md"
-              />
+              {project.id ? (
+                <Link to={`/projects/${project.id}`}>
+                  <img
+                    src={project.thumbnail || project.image}
+                    alt={project.title}
+                    className="w-full h-40 object-cover rounded-md cursor-pointer"
+                  />
+                </Link>
+              ) : (
+                <img
+                  src={project.thumbnail || project.image}
+                  alt={project.title}
+                  className="w-full h-40 object-cover rounded-md"
+                />
+              )}
               <p className="text-sm text-gray-600">{project.company_name}</p>
               <span className="inline-block bg-blue-500 text-white text-xs px-2 py-1 rounded-full mt-2">
                 {project.type}

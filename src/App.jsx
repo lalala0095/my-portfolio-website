@@ -7,7 +7,7 @@ import TechStackShowcase from "./components/TechStacks";
 import Projects from "./components/Projects";
 import ContactSection from "./components/Contact";
 import YouTubeSection from "./components/YoutubeVideoSection";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Certificates from "./components/Certificates";
 import ProjectDetailDynamic from "./pages/projects/ProjectDetailDynamic";
 
@@ -16,22 +16,36 @@ function Layout() {
   const isProjectDetail = location.pathname.includes("/projects/");
   const [isOpen, setIsOpen] = useState(false);
 
-  // const isProjectDetail = /^\/projects\/[^/]+$/.test(location.pathname);
+  useEffect(() => {
+    if (location.pathname === "/" && location.state && location.state.scrollTo) {
+      setTimeout(() => {
+        const section = document.getElementById(location.state.scrollTo);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+        window.history.replaceState({}, document.title);
+      }, 300);
+    }
+  }, [location]);
 
   return (
     <>
       {isProjectDetail ? <HeaderInProjects /> : <Header isOpen={isOpen} setIsOpen={setIsOpen} />}
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero isOpen={isOpen} setIsOpen={setIsOpen}/>
-            <TechStackShowcase />
-            <Projects />
-            <YouTubeSection />
-            <Certificates />
-            <ContactSection />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero isOpen={isOpen} setIsOpen={setIsOpen}/>
+              <TechStackShowcase />
+              <Projects />
+              <YouTubeSection />
+              <Certificates />
+              <ContactSection />
+            </>
+          }
+          key={location.state && location.state.scrollTo ? location.state.scrollTo + Date.now() : "home"}
+        />
         <Route path="/projects/:projectId" element={<ProjectDetailDynamic />} />
       </Routes>
       <Footer />

@@ -1,19 +1,21 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const HeaderInProjects = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleScroll = (e, sectionId) => {
     e.preventDefault();
-    navigate("/");
-    setTimeout(() => {
+    if (location.pathname === "/") {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100);
+    } else {
+      navigate("/", { state: { scrollTo: sectionId } });
+    }
   };
 
   return (

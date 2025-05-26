@@ -11,7 +11,16 @@ const Header = ({ isOpen, setIsOpen }) => {
           <a href="#tech-stacks" className="nav-link">
             Tech Stacks
           </a>
-          <a href="#projects" className="nav-link">
+          <a
+            href="#projects"
+            className="nav-link"
+            onClick={() => {
+              const section = document.getElementById('projects');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Projects
           </a>
           <a href="#youtube-section" className="nav-link">
@@ -43,7 +52,16 @@ const Header = ({ isOpen, setIsOpen }) => {
           <a href="#tech-stacks" className="block nav-link">
             Tech Stacks
           </a>
-          <a href="#projects" className="nav-link">
+          <a
+            href="#projects"
+            className="nav-link"
+            onClick={() => {
+              const section = document.getElementById('projects');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Projects
           </a>
           <a href="#youtube-section" className="nav-link">
