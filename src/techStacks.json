@@ -1,0 +1,55 @@
+[
+    {
+      "id": "ai-api",
+      "title": "🧠 AI & API Integrations",
+      "technologies": [
+        { "name": "OpenAI GPT", "icon": "SiOpenai", "color": "text-gray-800", "rating": 5 },
+        { "name": "Google Gemini", "icon": "GoogleGeminiIcon", "color": "text-red-600", "rating": 4 },
+        { "name": "Perplexity AI", "icon": "TbSearch", "color": "text-blue-400", "rating": 3.5 },
+        { "name": "SERP APIs", "icon": "FaSearchengin", "color": "text-orange-500", "rating": 3.5 }
+      ]
+    }, 
+    {
+      "id": "web",
+      "title": "🌐 Frontend/Backend Web Development",
+      "technologies": [
+        { "name": "Python FastAPI", "icon": "SiFastapi", "color": "text-teal-500", "rating": 4.5 },
+        { "name": "React", "icon": "FaReact", "color": "text-blue-500", "rating": 3 },
+        { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "text-teal-400", "rating": 2 },
+        { "name": "Python Flask", "icon": "SiFlask", "color": "text-green-600", "rating": 3.5 },
+        { "name": "Google AppSheet", "icon": "FaGoogle", "color": "text-red-500", "rating": 5 }
+      ]
+    },
+    {
+      "id": "data-analytics",
+      "title": "📊 Data Analytics",
+      "technologies": [
+        { "name": "Python", "icon": "SiPython", "color": "text-gray-600", "rating": 5 },
+        { "name": "Power BI", "icon": "FaChartBar", "color": "text-yellow-500", "rating": 5 },
+        { "name": "R", "icon": "FaRProject", "color": "text-blue-700", "rating": 5 },
+        { "name": "Microsoft Excel", "icon": "PiMicrosoftExcelLogoFill", "color": "text-green-600", "rating": 5 },
+        { "name": "Google Sheets", "icon": "SiGooglesheets", "color": "text-green-500", "rating": 5 }
+      ]
+    },
+    {
+      "id": "data-eng",
+      "title": "🔧 Data Engineering",
+      "technologies": [
+        { "name": "Apache Airflow", "icon": "SiApacheairflow", "color": "text-yellow-500", "rating": 4.5 },
+        { "name": "MongoDB", "icon": "SiMongodb", "color": "text-green-500", "rating": 5 },
+        { "name": "SQL Server", "icon": "PiFileSql", "color": "text-blue-500", "rating": 5 },
+        { "name": "MySQL", "icon": "SiMysql", "color": "text-blue-500", "rating": 4 },
+        { "name": "PostgreSQL", "icon": "SiPostgresql", "color": "text-blue-700", "rating": 4 },
+        { "name": "Google Cloud Platform", "icon": "SiGooglecloud", "color": "text-blue-600", "rating": 4 }
+      ]
+    },
+    {
+      "id": "deploy",
+      "title": "🚀 Deployments",
+      "technologies": [
+        { "name": "AWS EC2", "icon": "FaAws", "color": "text-orange-500", "rating": 4 },
+        { "name": "Azure Web App", "icon": "VscAzure", "color": "text-blue-500", "rating": 4 },
+        { "name": "Github Pages", "icon": "SiGithubpages", "color": "text-purple-700", "rating": 4 }
+      ]
+    }
+  ]
