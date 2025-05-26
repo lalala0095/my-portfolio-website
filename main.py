@@ -26,3 +26,8 @@ app.add_middleware(
 async def get_projects():
     projects = await projects_coll.find({}, {"_id": 0}).to_list(None)
     return projects
+
+@app.get("/projects/{project_id}")
+async def get_projects(project_id):
+    project = await projects_coll.find_one({"id": project_id}, {"_id": 0})
+    return project
