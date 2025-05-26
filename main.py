@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List
-from pydantic import BaseModel
+# from typing import List
+# from pydantic import BaseModel
 from config import projects_coll
 
 app = FastAPI(title="Lemuel Torrefiel Portfolio API", description="This FastAPI server is dedicated for the portfolio website of Lemuel Torrefiel.")
