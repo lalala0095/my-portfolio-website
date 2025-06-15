@@ -51,6 +51,25 @@ const ProjectDetailDynamic = () => {
     setSelectedImage(project.gallery[newIndex]);
   };
 
+  const getYouTubeEmbedUrl = (url) => {
+    try {
+      const parsedUrl = new URL(url);
+      const hostname = parsedUrl.hostname;
+  
+      if (hostname.includes("youtube.com")) {
+        return `https://www.youtube.com/embed/${parsedUrl.searchParams.get("v")}`;
+      }
+  
+      if (hostname.includes("youtu.be")) {
+        return `https://www.youtube.com/embed/${parsedUrl.pathname.slice(1)}`;
+      }
+  
+      return null;
+    } catch {
+      return null;
+    }
+  };
+
   useEffect(() => {
     if (!selectedImage) return;
     const handleKeyDown = (event) => {
@@ -59,8 +78,9 @@ const ProjectDetailDynamic = () => {
       else if (event.key === 'Escape') closeModal();
     };
     window.addEventListener('keydown', handleKeyDown);
+    if (project) console.log("Fetched project:", project);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImage, nextImage, prevImage]);
+  }, [project, selectedImage, nextImage, prevImage]);
 
   if (loading) return <div className="text-center py-10">Loading...</div>;
   if (error) return <div className="text-center py-10 text-red-600">{error}</div>;
@@ -95,16 +115,36 @@ const ProjectDetailDynamic = () => {
             <p className="text-gray-700">{project.approach}</p>
           </>
         )}
+
+        {/* Impact Section */}
         {project.impact && (
           <>
             <h3 className="text-lg font-semibold text-gray-900 mt-4">Impact</h3>
             <ul className="list-disc list-inside text-gray-700">
               {Object.entries(project.impact).map(([key, value]) => (
-                <li key={key}><strong>{key.replace(/([A-Z])/g, ' $1').trim()}:</strong> {value}</li>
+                <li key={key}><strong>{key}:</strong> {value}</li>
               ))}
             </ul>
           </>
         )}
+        
+        {/* Youtube Video Section */}
+        {project.video_url && getYouTubeEmbedUrl(project.video_url) && (
+          <>
+            <h3 className="text-lg font-semibold text-gray-900 mt-6">Demo Video</h3>
+            <div className="aspect-w-16 aspect-h-9 mt-2">
+              <iframe
+                className="w-full h-64 md:h-96 rounded-md"
+                src={getYouTubeEmbedUrl(project.video_url)}
+                title="Demo Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </>
+        )}
+
         {/* Gallery Section */}
         {project.gallery && project.gallery.length > 0 && (
           <>
@@ -119,6 +159,36 @@ const ProjectDetailDynamic = () => {
                   onClick={() => openModal(index)}
                 />
               ))}
+            </div>
+          </>
+        )}
+
+        {/* PDF Section */}
+        {project.pdf_links && project.pdf_links.length > 0 && (
+          <>
+            <h3 className="text-lg font-semibold text-gray-900 mt-6">Project PDFs</h3>
+            <ul className="mb-4">
+              {project.pdf_links.map((pdf, idx) => (
+                <li key={idx} className="mb-2 flex items-center gap-2">
+                  <span className="truncate">{pdf.split('/').pop()}</span>
+                  <a
+                    href={pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline ml-2"
+                  >
+                    View
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {/* Optionally embed the first PDF */}
+            <div className="w-full h-96 mb-6">
+              <iframe
+                src={project.pdf_links[0]}
+                title="PDF Preview"
+                className="w-full h-full border rounded"
+              ></iframe>
             </div>
           </>
         )}
